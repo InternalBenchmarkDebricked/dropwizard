@@ -3,7 +3,7 @@ package io.dropwizard.auth.principal;
 import io.dropwizard.auth.AbstractAuthResourceConfig;
 import io.dropwizard.auth.PolymorphicAuthDynamicFeature;
 import io.dropwizard.auth.PolymorphicAuthValueFactoryProvider;
-import io.dropwizard.logging.BootstrapLogging;
+import io.dropwizard.logging.common.BootstrapLogging;
 import io.dropwizard.util.Maps;
 import io.dropwizard.util.Sets;
 import org.glassfish.jersey.internal.inject.AbstractBinder;
