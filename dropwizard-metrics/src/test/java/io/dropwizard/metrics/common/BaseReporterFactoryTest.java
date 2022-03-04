@@ -3,7 +3,6 @@ package io.dropwizard.metrics.common;
 import com.codahale.metrics.Metric;
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.ScheduledReporter;
-import io.dropwizard.metrics.common.BaseReporterFactory;
 import io.dropwizard.util.Sets;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

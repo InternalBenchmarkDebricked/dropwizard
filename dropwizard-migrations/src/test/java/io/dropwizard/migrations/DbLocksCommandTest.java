@@ -13,7 +13,8 @@ import java.io.PrintStream;
 import java.io.PrintWriter;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
 
 @NotThreadSafe
 class DbLocksCommandTest extends AbstractMigrationTest {
