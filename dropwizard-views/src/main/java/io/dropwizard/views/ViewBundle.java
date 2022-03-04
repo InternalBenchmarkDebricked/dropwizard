@@ -1,7 +1,7 @@
 package io.dropwizard.views;
 
-import io.dropwizard.ConfiguredBundle;
-import io.dropwizard.setup.Environment;
+import io.dropwizard.core.ConfiguredBundle;
+import io.dropwizard.core.setup.Environment;
 import io.dropwizard.util.Sets;
 
 import java.util.Collections;
