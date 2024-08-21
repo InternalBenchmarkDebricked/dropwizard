@@ -9,14 +9,20 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: debricked/actions/callgraph@v3
-      - uses: debricked/actions@v3
+      - name: production scan
+        if: success() || failure()
+        uses: debricked/actions@v3
         env:
           DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN }}
-      - uses: debricked/actions@v3
+      - name: staging scan
+        if: success() || failure()
+        uses: debricked/actions@v3
         env:
           DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN_STAGING }}
           DEBRICKED_URI: 'https://staging.debricked.com'
-      - uses: debricked/actions@v3
+      - name: review app scan
+        if: success() || failure()
+        uses: debricked/actions@v3
         env:
           DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN_REVIEW }}
           DEBRICKED_URI: 'https://review-6831-reach-qc4gm9.review.debricked.dev'
